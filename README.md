@@ -44,6 +44,8 @@ The primary files and directories are organized as follows:
 │       └── given.js
 │       └── then.js
 │       └── when.js
+│   └── test_data
+│       └── locators.json
 │   └── tests
 │       └── search.feature
 ├── cucumber.js
