@@ -1,0 +1,10 @@
+{
+    "homePage": {
+      "searchButton": "input[role='button']",
+      "searchBox": "textarea[type='search']"
+    },
+    "resultPage": {
+      "resultSections": "#rso > div"
+    }
+  }
+  
