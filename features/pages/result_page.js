@@ -1,8 +1,11 @@
 const Base = require('./base.js')
+const selectors = require('../test_data/locators.json');
+const config = require('../../config.js');
+
 
 module.exports = class ResultPage extends Base{
     async open_item_on_a_new_tab(option){
-        const result_search_sections = await this.get_elements('#rso > div')
+        const result_search_sections = await this.get_elements(selectors.resultPage.resultSections)
         
         let result_selected;
         let item_selected;
@@ -14,6 +17,6 @@ module.exports = class ResultPage extends Base{
         }
         const url = await item_selected.getAttribute('href')
         await browser.newWindow(url)
-        await browser.pause(5000)
+        await browser.pause(config.timeout)
     }
 }

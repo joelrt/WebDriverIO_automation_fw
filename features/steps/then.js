@@ -2,10 +2,11 @@ const { Then } = require('@wdio/cucumber-framework')
 const assert = require('assert');
 const ResultPage = require('../pages/result_page.js');
 const rp = new ResultPage();
+const selectors = require('../test_data/locators.json');
 
 
 Then('the user clicks on the search button', async function () {
-  const search_button = await rp.get_elements('input[role="button"]')[1]
+  const search_button = await rp.get_elements(selectors.homePage.searchButton)[1]
   await rp.click_element(search_button)
 });
 
