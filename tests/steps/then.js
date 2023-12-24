@@ -1,8 +1,8 @@
 const { Then } = require('@wdio/cucumber-framework')
 const assert = require('assert');
-const ResultPage = require('../pages/result_page.js');
+const ResultPage = require('../../pages/result_page.js');
 const rp = new ResultPage();
-const selectors = require('../test_data/locators.json');
+const selectors = require('../../test_data/locators.json');
 
 
 Then('the user clicks on the search button', async function () {

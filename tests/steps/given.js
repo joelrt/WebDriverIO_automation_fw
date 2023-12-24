@@ -1,6 +1,6 @@
 const { Given } = require('@wdio/cucumber-framework');
 const assert = require('assert');
-const HomePage = require('../pages/home_page.js');
+const HomePage = require('../../pages/home_page.js');
 const hp = new HomePage();
 const config = require('../../config.js');
 
