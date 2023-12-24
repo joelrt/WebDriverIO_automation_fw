@@ -28,9 +28,11 @@ npm run wdio
 ## Project Structure
 The project follows the following structure:
 
-features/tests: Contains Gherkin feature files.
-features/steps: Contains Cucumber step definitions.
-feature/pages: Contains base methos following POM style
+```
+tests/features/: Contains Gherkin feature files.
+tests/steps/: Contains Cucumber step definitions.
+pages/: Contains base methos following POM style
+```
 
 The primary files and directories are organized as follows:
 
