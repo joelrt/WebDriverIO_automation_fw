@@ -35,19 +35,21 @@ feature/pages: Contains base methos following POM style
 The primary files and directories are organized as follows:
 
 ```
-├── features/
-│   └── pages
-│       └── base.js
-│       └── home_page.js
-│       └── result_page.js
+├── pages/
+│   └── base.js
+│   └── home_page.js
+│   └── result_page.js
+├── test_data/
+│   └── locators.json
+├── tests/
+│   └── features/
+│       └── search.feature
 │   └── steps
 │       └── given.js
 │       └── then.js
 │       └── when.js
-│   └── test_data
-│       └── locators.json
-│   └── tests
-│       └── search.feature
+├── .gitignore
+├── config.js
 ├── cucumber.js
 ├── wdio.conf.js
 ├── package.json
