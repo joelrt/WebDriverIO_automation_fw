@@ -1,9 +1,9 @@
 const { When } = require('@wdio/cucumber-framework')
-const HomePage = require('../pages/home_page.js');
-const ResultPage = require('../pages/result_page.js');
+const HomePage = require('../../pages/home_page.js');
+const ResultPage = require('../../pages/result_page.js');
 const hp = new HomePage();
 const rp = new ResultPage();
-const selectors = require('../test_data/locators.json');
+const selectors = require('../../test_data/locators.json');
 
 
 When('the user enters {} in the search bar', async function (word) {

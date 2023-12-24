@@ -1,6 +1,6 @@
 const Base = require('./base.js')
 const selectors = require('../test_data/locators.json');
-const config = require('../../config.js');
+const config = require('../config.js');
 
 
 module.exports = class ResultPage extends Base{
