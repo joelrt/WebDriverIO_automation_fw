@@ -3,7 +3,7 @@ exports.config = {
     runner: 'local',
 
     specs: [
-        './tests/features/*.feature'
+        './features/tests/*.feature'
     ],
     exclude: [],
 
@@ -30,7 +30,7 @@ exports.config = {
     reporters: ['spec'],
 
     cucumberOpts: {
-        require: ['./tests/steps/*.js'],
+        require: ['./features/steps/*.js'],
         backtrace: false,
         requireModule: [],
         dryRun: false,

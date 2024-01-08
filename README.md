@@ -29,8 +29,8 @@ npm run wdio
 The project follows the following structure:
 
 ```
-tests/features/: Contains Gherkin feature files.
-tests/steps/: Contains Cucumber step definitions.
+features/tests/: Contains Gherkin feature files.
+features/steps/: Contains Cucumber step definitions.
 pages/: Contains base methos following POM style
 ```
 
@@ -43,8 +43,8 @@ The primary files and directories are organized as follows:
 │   └── result_page.js
 ├── test_data/
 │   └── locators.json
-├── tests/
-│   └── features/
+├── features/
+│   └── tests/
 │       └── search.feature
 │   └── steps
 │       └── given.js
